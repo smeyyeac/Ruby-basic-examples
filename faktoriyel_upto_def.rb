@@ -5,5 +5,4 @@ def faktoriyel(n)
  end
  puts "#{sonuc}"
  end
-
-
+faktoriyel(5)
