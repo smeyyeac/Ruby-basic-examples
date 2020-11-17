@@ -22,4 +22,4 @@ end
 
 puts "sayı giriniz :"
 user_number=gets.to_i
-puts tau_number(user_number)
+tau_number(user_number)
