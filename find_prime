@@ -1,0 +1,10 @@
+require 'prime'
+def findPrime(n)
+    sayilar = []
+    Prime.each(n) do |prime|
+       if (n % prime==0)
+           sayilar << prime
+       end
+   end
+   return sayilar  
+end
