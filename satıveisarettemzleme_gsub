@@ -1,0 +1,6 @@
+
+#noktalama işaretleri ve sayıları temizler.
+
+def reverse_letter(string)
+   string.gsub(/[^A-Za-z]/, '').reverse
+end
