@@ -1,0 +1,27 @@
+#İki dizge dizisi verildiğinde a1 ve a2, dizgelerin alt dizeleri olan a1 dizelerinin sözlükbilimsel sırasına göre sıralanmış bir r dizisi döndürür.
+
+def in_array(array1, array2)
+  arr = []
+  array1.each do |first|
+    array2.each do |last|
+      if last.include?(first) 
+        arr << first
+        break
+      end
+    end
+  end
+  arr.sort
+end
+
+def in_array(array1, array2)
+  array1.select{|s| array2.any?{|w| w.include?(s) } }.sort
+end
+
+
+def in_array(array1, array2)
+ array1.select do |sub_string|
+    array2.any? do |word|
+      word.include?(sub_string)
+    end
+  end.sort 
+end
